@@ -67,7 +67,7 @@ class Migration(migrations.Migration):
                 ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
             ],
             options={
-                'db_table': 'oauth2_accesstoken',
+                'db_table': 'oauth2_refreshtoken',
             },
         ),
         migrations.AddField(
