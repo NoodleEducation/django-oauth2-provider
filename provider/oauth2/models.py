@@ -196,7 +196,7 @@ class RefreshToken(models.Model):
     expired = models.BooleanField(default=False)
 
     class Meta:
-        db_table = 'oauth2_refreshtoken'
+        db_table = 'oauth2_accesstoken'
 
     def __unicode__(self):
         return self.token
