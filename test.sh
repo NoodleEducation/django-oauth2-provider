@@ -12,7 +12,7 @@ IS_16=$(echo $DJ_VERSION | grep "1.6")
 if [ "$?" -ne "1" ]; then
     app_names=( provider provider.oauth2 )
 else
-    app_names=( provider oauth2 )
+    app_names=( provider provider.oauth2 )
 fi
 
 python manage.py test ${app_names[@]} --traceback --failfast
